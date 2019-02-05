@@ -1,0 +1,32 @@
+{
+  "name": "verstka",
+  "version": "1.0.0",
+  "description": "перша самостійна спроба роботи з gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://manhhatan@bitbucket.org/manhhatan/first-gulp-maket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/manhhatan/first-gulp-maket#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#v4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp.spritesmith": "^6.3.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize": "^0.3.1",
+    "normalize.scss": "^0.1.0"
+  }
+}

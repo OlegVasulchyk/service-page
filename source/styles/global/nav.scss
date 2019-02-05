@@ -1,0 +1,43 @@
+.nav {
+    margin: 0px 0px 0px 0px;
+ }
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-decoration: none;
+
+
+    &__link {
+        margin-left: 70px;
+        text-decoration: none;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-around;
+
+      
+       
+        
+
+        &:first-child::after {
+            margin-left: 5px;
+        }
+
+        &__item {
+            padding: 16px;
+            text-decoration: none;
+            color: #3a494c;
+            font: bold 1.225rem "MYRIADPRO-BOLD";
+
+            &:hover
+             {
+                color: #a8d5dd;
+                background: #3a494c;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,60 @@
+.button {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-radius: 10px;
+    font: bold 1.2rem "MYRIADPRO-BOLD";
+    color: #fff;
+    padding: 28px 30px 32px 32px; 
+    transition: 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: #fff;
+
+    &:hover {
+        background: darken(#fff, 10%);
+    }
+        // & {
+        //     // display: flex;
+        //     // justify-content: center;
+        //     // align-items: center; // або можна margin:auto
+        //     // я не знаю що правильніше задавати ширину кнопок
+        //     //  з допомогою padding чи задавати ширину з допомогою width та height і цетрувати тоді флексами текст
+        // }
+
+    &--works {
+        color: #a2a3a3;
+        display: flex;
+        margin: auto;
+    }
+
+    &--green {
+        background: #9ad4a6;
+
+        &:hover {
+            background: lighten(#9ad4a6, 10%);
+        }
+    }
+
+    &--blue {
+        background: #a5d3db;
+
+        &:hover {
+            background: lighten(#a5d3db, 10%);
+        }
+    }
+
+    &--posts {
+        color: #c7dfe7;
+        display: flex;
+        margin: auto;
+    }
+    &--form {
+        color: #3c3c3c;
+        display: flex;
+        margin: 0 auto 95;
+        
+    }
+}

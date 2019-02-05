@@ -1,0 +1,156 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$browser-name: 'browser';
+$browser-x: 167px;
+$browser-y: 343px;
+$browser-offset-x: -167px;
+$browser-offset-y: -343px;
+$browser-width: 142px;
+$browser-height: 113px;
+$browser-total-width: 758px;
+$browser-total-height: 621px;
+$browser-image: '../images/sprite.png';
+$browser: (167px, 343px, -167px, -343px, 142px, 113px, 758px, 621px, '../images/sprite.png', 'browser', );
+$cube-name: 'cube';
+$cube-x: 500px;
+$cube-y: 268px;
+$cube-offset-x: -500px;
+$cube-offset-y: -268px;
+$cube-width: 71px;
+$cube-height: 71px;
+$cube-total-width: 758px;
+$cube-total-height: 621px;
+$cube-image: '../images/sprite.png';
+$cube: (500px, 268px, -500px, -268px, 71px, 71px, 758px, 621px, '../images/sprite.png', 'cube', );
+$face-name: 'face';
+$face-x: 422px;
+$face-y: 268px;
+$face-offset-x: -422px;
+$face-offset-y: -268px;
+$face-width: 78px;
+$face-height: 72px;
+$face-total-width: 758px;
+$face-total-height: 621px;
+$face-image: '../images/sprite.png';
+$face: (422px, 268px, -422px, -268px, 78px, 72px, 758px, 621px, '../images/sprite.png', 'face', );
+$imac-name: 'imac';
+$imac-x: 0px;
+$imac-y: 0px;
+$imac-offset-x: 0px;
+$imac-offset-y: 0px;
+$imac-width: 422px;
+$imac-height: 343px;
+$imac-total-width: 758px;
+$imac-total-height: 621px;
+$imac-image: '../images/sprite.png';
+$imac: (0px, 0px, 0px, 0px, 422px, 343px, 758px, 621px, '../images/sprite.png', 'imac', );
+$iphone-name: 'iphone';
+$iphone-x: 0px;
+$iphone-y: 343px;
+$iphone-offset-x: 0px;
+$iphone-offset-y: -343px;
+$iphone-width: 167px;
+$iphone-height: 134px;
+$iphone-total-width: 758px;
+$iphone-total-height: 621px;
+$iphone-image: '../images/sprite.png';
+$iphone: (0px, 343px, 0px, -343px, 167px, 134px, 758px, 621px, '../images/sprite.png', 'iphone', );
+$light-name: 'light';
+$light-x: 0px;
+$light-y: 477px;
+$light-offset-x: 0px;
+$light-offset-y: -477px;
+$light-width: 96px;
+$light-height: 144px;
+$light-total-width: 758px;
+$light-total-height: 621px;
+$light-image: '../images/sprite.png';
+$light: (0px, 477px, 0px, -477px, 96px, 144px, 758px, 621px, '../images/sprite.png', 'light', );
+$works-name: 'works';
+$works-x: 422px;
+$works-y: 0px;
+$works-offset-x: -422px;
+$works-offset-y: 0px;
+$works-width: 336px;
+$works-height: 268px;
+$works-total-width: 758px;
+$works-total-height: 621px;
+$works-image: '../images/sprite.png';
+$works: (422px, 0px, -422px, 0px, 336px, 268px, 758px, 621px, '../images/sprite.png', 'works', );
+$spritesheet-width: 758px;
+$spritesheet-height: 621px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($browser, $cube, $face, $imac, $iphone, $light, $works, );
+$spritesheet: (758px, 621px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

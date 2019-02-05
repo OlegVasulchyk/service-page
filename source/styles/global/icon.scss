@@ -1,0 +1,44 @@
+.header-icon {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 1px;
+        background: #9ec8d1;
+        box-shadow: 0px 0px 32px rgb(196, 148, 148);
+    }
+}
+
+.icon-works {
+    @include sprite ($works);
+}
+
+.icon-browser {
+    @include sprite ($browser);
+}
+
+.icon-light {
+    @include sprite ($light);
+}
+
+.icon-face {
+    @include sprite ($face);
+}
+
+.icon-cube {
+    @include sprite ($cube);
+}
+
+.icon-imac {
+    @include sprite ($imac);
+}
+
+.icon-iphone {
+    @include sprite ($iphone);
+}
