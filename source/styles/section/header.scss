@@ -1,0 +1,116 @@
+.header{
+    background: #686868 url(../images/banner.jpg) center/cover no-repeat border-box;
+}
+
+.menu-block {
+    margin: 0 40px 0 30px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.logo {
+    color: #fff;
+    font: 400 2.4rem 'sansationregular' , sans-serif;
+    text-transform: uppercase;
+
+
+    &::after {
+        content: 'go';
+        color: #da2346;
+    }
+}
+
+.social {
+    display: flex;
+
+    &__icon {
+        color: rgba(255, 255, 255, 0.7);
+        width: 26px;
+        height: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        margin-left: 5px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+}
+
+.banner-block {
+    padding: 128px 43px 168px 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.2);
+    width: 2.9rem;
+    height: 3.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-title {
+    display: flex;
+    flex: 0 0 67%;
+    text-align: center;
+    align-items: center;
+    padding: 44px 0 56px 0;
+    flex-flow: column nowrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    
+    &__header {
+        width: 67%;
+        color: #fff;
+        font: bold 4.8rem 'sansationbold', sans-serif;
+        margin:0 0 2.5rem 0;
+
+    }
+
+    &__text {
+        width: 67%;
+        color: rgba(255, 255, 255, 0.7);
+        font: 400 1.039rem/1.8rem 'sansationregular' , sans-serif;
+    }
+}
+
+.header-button--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 90.5%;
+}
+
+.header-button__line {
+    height: 1px;
+    flex: 0 0 33%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.header-button__title {
+    padding: 0.9rem 3rem;
+    background: rgba(255, 255, 255, 0);
+    border: 3px solid rgba(255, 255, 255, 1);
+    font: 400 1.4rem 'sansationregular' , sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}

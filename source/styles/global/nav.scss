@@ -6,38 +6,25 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     text-decoration: none;
 
 
-    &__link {
-        margin-left: 70px;
+    &__item {
+        margin-left: 55px;
         text-decoration: none;
+        color: #fff;
+        font: 400 1.264rem 'sansationregular' , sans-serif;
         text-transform: capitalize;
-        display: flex;
-        justify-content: space-around;
 
-      
-       
-        
-
-        &:first-child::after {
-            margin-left: 5px;
-        }
-
-        &__item {
-            padding: 16px;
-            text-decoration: none;
-            color: #3a494c;
-            font: bold 1.225rem "MYRIADPRO-BOLD";
-
-            &:hover
-             {
-                color: #a8d5dd;
-                background: #3a494c;
-                border-radius: 4px;
-            }
+        &:first-of-type {
+            margin: 0;
         }
     }
+    &__link:hover {
+        color: #0d7a87;
+    }
 }
+
+
+
 

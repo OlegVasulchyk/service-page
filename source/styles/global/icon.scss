@@ -15,30 +15,34 @@
     }
 }
 
-.icon-works {
-    @include sprite ($works);
+.icon-adobe_systems_logo {
+    @include sprite ($adobe_systems_logo);
 }
 
-.icon-browser {
-    @include sprite ($browser);
+.icon-behance {
+    @include sprite ($behance);
 }
 
-.icon-light {
-    @include sprite ($light);
+.icon-canva {
+    @include sprite ($canva);
 }
 
-.icon-face {
-    @include sprite ($face);
+.icon-cisco-logo {
+    @include sprite ($cisco-logo);
 }
 
-.icon-cube {
-    @include sprite ($cube);
+.icon-guideline-based {
+    @include sprite ($guideline-based);
 }
 
-.icon-imac {
-    @include sprite ($imac);
+.icon-infosys-logo {
+    @include sprite ($infosys-logo);
 }
 
-.icon-iphone {
-    @include sprite ($iphone);
+.icon-instagram {
+    @include sprite ($instagram);
+}
+
+.icon-invision {
+    @include sprite ($invision);
 }
