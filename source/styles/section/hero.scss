@@ -1,0 +1,42 @@
+.hero__menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero__item {
+    flex: 1 0 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    text-align: left;
+    padding: 45px 0 90px 45px;
+}
+
+.hero__title {
+    color: #252525;
+    font: 400 2.4rem 'sansationregular' , sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #252525;
+    padding: 0 0 8px 0;
+    width: 67%;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .2);
+    position: relative;
+    margin: 0 0 3rem 0;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background: #6e6e6e;
+        top: 98%;
+    }
+}
+.hero__text {
+    width: 67%;
+    font: 400 1.1rem '"MYRIADPRO-REGULAR"' , sans-serif;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
