@@ -16,4 +16,26 @@
             background: darken(#05a0af, 20%);
         }
     }
+
+    &__service {
+        background: #959595;
+        font: 400 1.2rem 'sansationregular' , sans-serif;
+    }
 }
+ 
+.button__service-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: #363737;
+    background: #089eac;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    &:first-of-type {
+        margin-right: 1px;
+    }
+}
+
