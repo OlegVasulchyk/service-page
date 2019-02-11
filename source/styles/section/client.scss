@@ -1,0 +1,20 @@
+.client {
+    padding: 1.6rem 0 7.2rem 0;
+    background: #fbfbfb;
+
+    &__list {
+        background: #fff;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 302px;
+    }
+    &__item {
+        flex: 250px;
+        height: 151px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

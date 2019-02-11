@@ -47,5 +47,35 @@
         position: relative;
         text-transform: uppercase;
     }
+    &--color {
+        background: #fefefe;
+        color: #656464;
+
+    }
+    &__line--color {
+        background: #656464;
+
+        &:nth-child(1)::after {
+            content: "";
+            width: 25%;
+            height: 3px;
+            position: absolute;
+            bottom: -100%;
+            right:0;
+            display: block;
+            background: #656464;
+            }
+
+        &:nth-child(3)::before {
+            content: "";
+            width: 25%;
+            height: 3px;
+            position: absolute;
+            bottom: -100%;
+            left:0;
+            display: block;
+            background: #656464;
+            }
+    }
 }
 
