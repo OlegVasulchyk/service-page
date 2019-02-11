@@ -1,0 +1,102 @@
+.feedback {
+    padding: 2.7rem 1.7rem 3.2rem 0;
+    background: #3d3d3d;
+    display: flex;
+
+    &__text-wrap {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 29%;
+        margin-right: 5rem;
+        color: #cdc8c8;
+    }
+
+    &__text {
+        width: 80%;
+        text-align: center;
+        font: 400 1.8rem/2.5rem 'sansationregular' , sans-serif;
+        margin-bottom: 3rem;
+        
+        
+        &::after {
+            content: "";
+            height: 2px;
+            width: 25%;
+            background: #b1aeae;
+            margin: 1.5rem auto 0;
+            display: block;
+        }
+    }
+
+    &__scroll-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    &-arrow {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    &__number {
+        font: 400 1.4rem 'sansationregular' , sans-serif;
+    }
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        background: url("../images/Model-1.jpg") no-repeat;
+        width: 202px;
+        height: 223px;
+        padding: 0 2rem 2rem 2rem;
+        margin-left: 2.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-sizing: border-box;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    &__number-image {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 43px;
+        height: 33px;
+        background: #fff;
+        color: #444444;
+        margin-right: 0.6rem;
+        font: 400 1rem 'sansationregular' , sans-serif;
+    }
+
+    &__description {
+        padding: 0 0 0 0.5rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 136px;
+        height: 32px;
+        background: #fff;
+        color: #272727;
+        font: 400 1.2rem "MYRIADPRO-REGULAR" , sans-serif;
+
+        &::after {
+            content: "CEO, Vesso";
+            font: 400 1rem 'sansationregular' , sans-serif;
+            color: #444444;
+        }
+    }
+}

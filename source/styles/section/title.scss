@@ -19,33 +19,33 @@
         position: relative;
         bottom: 0.7rem;
 
+        &:nth-child(1)::after {
+            content: "";
+            width: 25%;
+            height: 3px;
+            position: absolute;
+            bottom: -100%;
+            right:0;
+            display: block;
+            background: #fff;
+            }
+
+        &:nth-child(3)::before {
+            content: "";
+            width: 25%;
+            height: 3px;
+            position: absolute;
+            bottom: -100%;
+            left:0;
+            display: block;
+            background: #fff;
+            }
     }
 
     &__text {
         font: 400 4rem 'sansationregular' , sans-serif;
         position: relative;
-
-        &::before {
-            content: "";
-            width: 25%;
-            height: 3px;
-            position: absolute;
-            top: 80%;
-            right: 102%;
-            display: flex;
-            background: #fff;
-        }
-
-        &::after {
-            content: "";
-            width: 25%;
-            height: 3px;
-            position: absolute;
-            top: 80%;
-            left: 102%;
-            display: block;
-            background: #fff;
-            }
+        text-transform: uppercase;
     }
 }
 
