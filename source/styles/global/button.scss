@@ -38,4 +38,24 @@
         margin-right: 1px;
     }
 }
+.button-form {
+    height: 45px;
+    width: 99px;
+    color: #097e89;
+    background: #fff;
+    font: 500 1.2rem "MYRIADPRO-REGULAR" , sans-serif;
+    word-spacing: -1px;
 
+    &:hover{
+        background: darken(#fff, 15%);
+        color: darken(#089eac, 15%);
+    }
+}
+
+.button-footer {
+    width: 103px;
+    height: 44px;
+    box-sizing: border-box;
+    background: #0072bc;
+    border: 1px solid #cccccc;
+}
